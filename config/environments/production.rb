@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  config.action_mailer.default_url_options = { host: https://radiant-wildwood-85734.herokuapp.com/}
+  config.action_mailer.default_url_options = { host: 'radiant-wildwood-85734.herokuapp.com'}
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings =
   {
