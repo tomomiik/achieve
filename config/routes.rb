@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :submit_requests
   resources :tasks
   get 'relationships/create'
 
