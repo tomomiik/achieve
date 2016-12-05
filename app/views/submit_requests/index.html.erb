@@ -1,8 +1,11 @@
+<div class="container">
+  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">
+
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Submit Requests</h1>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>User</th>
@@ -22,9 +25,9 @@
         <td><%= submit_request.message %></td>
         <td><%= submit_request.request_user_id %></td>
         <td><%= submit_request.status %></td>
-        <td><%= link_to 'Show', submit_request %></td>
-        <td><%= link_to 'Edit', edit_submit_request_path(submit_request) %></td>
-        <td><%= link_to 'Destroy', submit_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', submit_request, class: 'btn btn-default' %></td>
+        <td><%= link_to 'Edit', edit_submit_request_path(submit_request), class: 'btn btn-success' %></td>
+        <td><%= link_to 'Destroy', submit_request, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -33,3 +36,5 @@
 <br>
 
 <%= link_to 'New Submit request', new_submit_request_path %>
+</div>
+</div>
