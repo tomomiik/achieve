@@ -17,8 +17,8 @@
   <tbody>
     <% @submit_requests.each do |submit_request| %>
       <tr>
-        <td><%= submit_request.user %></td>
-        <td><%= submit_request.task %></td>
+        <td><%= submit_request.user.name %></td>
+        <td><%= submit_request.task.title %></td>
         <td><%= submit_request.message %></td>
         <td><%= submit_request.request_user_id %></td>
         <td><%= submit_request.status %></td>
