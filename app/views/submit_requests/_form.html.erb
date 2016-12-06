@@ -15,7 +15,7 @@
 
   <div class="field">
     <%= f.label :task_id %><br>
-    <%= f.collection_select :task_id, Task.all, :id, :title %>
+    <%= f.collection_select :task_id, Task.where(charge_id: current_user.id), :id, :title %>
   </div>
   <div class="field">
     <%= f.label :message %><br>
