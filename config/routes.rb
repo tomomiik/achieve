@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'notifications/index'
+
   resources :submit_requests do
     get 'inbox', on: :collection
     member do
@@ -26,6 +28,10 @@ Rails.application.routes.draw do
     collection do
       post:confirm
     end
+  end
+
+  resources :conversations do
+    resources :messages
   end
 
 #  deviseは使っているモデルよりも上に記載する
