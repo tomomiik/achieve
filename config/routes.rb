@@ -30,6 +30,8 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :poems, only: [:index, :show]
+
   resources :conversations do
     resources :messages
   end
