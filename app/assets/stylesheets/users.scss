@@ -5,8 +5,14 @@
 .container-child{
   width:25%;
 }
+.profile_img{
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-img{
-  max-width: 50px;
-  max-height: 50px;
+li{
+  list-style:none;
 }

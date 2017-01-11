@@ -4,7 +4,9 @@
    <% if user.id != current_user.id %>
       <div class="container-child col-md-2 col-sm-4 col-xs-6 ">
         <%= link_to user_path(user) do %>
+        <div class="profile_img">
           <%= profile_img(user) %></br>
+        </div>
         <% end %>
         <%= user.email %>
         <%= render partial: 'follow_form', locals: { user: user } if signed_in?   %>
